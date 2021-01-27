@@ -1,0 +1,157 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+html{
+    scroll-behavior: smooth;
+}
+body{height: 900px;width:100%;}
+header {
+	background: url("../images/1.png");
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+    box-shadow: 5px 5px 5px 5px;
+    z-index:1;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+}
+
+.my_name {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+.gmt, .fmt {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+.below {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+.below:hover{
+    cursor: pointer;
+    position:relative;
+    top:3px;
+    border-radius: 0px 0px 100px 100px;
+    transition: border-radius 1s;
+    box-shadow:3px 3px 3px 3px white;
+}
+.below:focus{
+    outline:none;
+    box-shadow:none;
+}
+
+ /* Canvas */
+ /* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+  }
+  canvas {
+    display: block;
+    /* vertical-align: bottom; */
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: #fffdfd;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  } /* ---- stats.js ---- */
+  body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(38, 44, 84);
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    padding:0;
+    margin-top: auto;
+} 
+
+.navbar{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:2;
+    
+}
+.nav-head{
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    font-size: 18px;
+    color:blue;
+    padding:0px;
+    margin:0;
+    width:100%;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.nav-items{
+    margin-left:20px;
+}
+.nav-link-txt{
+    font-family: 'Dancing Script', cursive;
+    color:blue;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 20px;
+    font-size: 15px;
+    transition: font-size 1s;
+}
+.nav-link-txt:hover{
+    color:white;
+    font-size: 16px;
+    transition: font-size 0.5s;
+}
+
+.nav-colored { background-color:rgb(6, 6, 19);
+height:50px; transition:ease-out background-color 2s;
+}
+.nav-transparent { background-color:transparent;
+    transition:ease-out background-color 2s; color:white;}
+
+.fab{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
