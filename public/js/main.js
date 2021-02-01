@@ -79,11 +79,13 @@ window.onscroll = function () {
 
 // My project Section
 var base_icn = document.getElementById("base_icn");
+var base_icn_x = document.getElementById("base_icn_x");
 const hov_click = () => {
   "use strict"
     base_icn.classList.add("hov_icn");
     window.scrollBy(0,200);
 };
 base_icn.addEventListener('click',hov_click);
+base_icn_x.addEventListener('click',hov_click);
 
   
