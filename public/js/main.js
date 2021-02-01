@@ -77,4 +77,13 @@ window.onscroll = function () {
     }
 };  
 
+// My project Section
+var base_icn = document.getElementById("base_icn");
+const hov_click = () => {
+  "use strict"
+    base_icn.classList.add("hov_icn");
+    window.scrollBy(0,200);
+};
+base_icn.addEventListener('click',hov_click);
+
   

@@ -56,6 +56,7 @@ header .overlay{
 .below:focus{
     outline:none;
     box-shadow:none;
+    box-shadow:3px 3px 3px 3px white;
 }
 
  /* Canvas */
@@ -71,10 +72,10 @@ body {
   #particles-js {
     position: absolute;
     width: 95%;
-    height: 100%;
+    height:200%;
     background-color: #fffdfd;
     background-image: url("");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: 50% 50%;
   } /* ---- stats.js ---- */
@@ -98,6 +99,7 @@ body {
     bottom: 0;
     padding:0;
     margin-top: auto;
+    z-index: 2;
 } 
 
 .navbar{
@@ -114,7 +116,11 @@ body {
     color:blue;
     padding:0px;
     margin:0;
-    width:100%;
+    width:90%;
+}
+@media(max-width:700px){
+    .nav-head
+    { width:70%;}
 }
 .navbar-nav{
     margin-left: auto;
@@ -134,7 +140,7 @@ body {
 .nav-link-txt:hover{
     color:white;
     font-size: 16px;
-    transition: font-size 0.5s;
+    transition: font-size 0.2s;
 }
 
 .nav-colored { background-color:rgb(6, 6, 19);
@@ -143,7 +149,7 @@ height:50px; transition:ease-out background-color 2s;
 .nav-transparent { background-color:transparent;
     transition:ease-out background-color 2s; color:white;}
 
-.fab{
+.rot-fab{
     transition: all linear;
     animation: rot 2s linear infinite;
 }
@@ -155,3 +161,51 @@ height:50px; transition:ease-out background-color 2s;
     }
 }
 
+/* Middle Page */
+.mid{
+    margin-left:50px;
+    margin-top:50px;
+}
+.txt_middle{
+    font-size: 30px;
+    font-family: 'Original Surfer', cursive;
+}
+.middle_page{
+    position: absolute;
+    top:50%;
+    z-index: 1;
+    width:100%;
+}
+
+/* My projects */
+.fas{
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+.fas-rot-dn:hover{
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: rotate(90deg);
+}
+.card_head{
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(172, 3, 172);
+}
+.card{
+    box-shadow: 1px 1px 10px 1px;
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+.card-title,.card-text{
+    font-family: 'Courgette', cursive;
+}
+.card-title{
+    font-size: 25px;
+}.card-text{font-size: 20px;}
+.git_btn{
+    background-color: black;
+}
+.git_btn:hover{
+    background-color: white;
+    color:black;
+}
