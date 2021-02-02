@@ -31,9 +31,10 @@ header .overlay{
 }
 
 .gmt, .fmt {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Dancing Script', cursive;
 	margin-bottom: 30px;
 }
+.fmt{font-size: 15px;}
 
 .below {
 	border: none;
@@ -70,14 +71,16 @@ body {
     /* vertical-align: bottom; */
   } /* ---- particles.js container ---- */
   #particles-js {
-    position: absolute;
+    position: fixed;
     width: 95%;
-    height:300%;
+    height:100%;
     background-color: #fffdfd;
     background-image: url("");
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    top:0%;
+    z-index: -100;
+    /* background-position: 1% 50%; */
   } /* ---- stats.js ---- */
   body {
     position: absolute;
@@ -88,6 +91,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 
 .footer {
     font-family: 'Dancing Script', cursive;
@@ -208,4 +212,8 @@ height:50px; transition:ease-out background-color 2s;
 .git_btn:hover{
     background-color: white;
     color:black;
+}
+.img_404{
+    align-items: center;
+    width: 100%;
 }

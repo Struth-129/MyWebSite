@@ -60,6 +60,7 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
+  
 
 
 // Navbar effect
@@ -87,5 +88,8 @@ const hov_click = () => {
 };
 base_icn.addEventListener('click',hov_click);
 base_icn_x.addEventListener('click',hov_click);
+
+
+
 
   

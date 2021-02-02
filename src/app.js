@@ -15,6 +15,15 @@ app.get("/index",(req,res)=> {
 });
 app.get("/myworks",(req,res) => {
     res.render('myworks');
-})
+});
+app.get("/about",(req,res)=> {
+    res.render("about");
+});
+app.get("/mycreav",(req,res)=>{
+    res.render("mycreav");
+});
+app.get("*",(req,res)=>{
+    res.render('404nf');
+});
 
 app.listen(3000);
