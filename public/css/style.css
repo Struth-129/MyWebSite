@@ -1,6 +1,11 @@
 *{padding: 0; margin: 0; box-sizing: border-box;}
 html{
     scroll-behavior: smooth;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 body{height: 900px;width:100%;}
 header {
@@ -278,7 +283,11 @@ height:50px; transition:ease-out background-color 2s;
     box-shadow: 1px 1px 10px 1px lime;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 1px;
+  }
+  ::-webkit-scrollbar:hover{
+      width: 10px;
+      transition: width 2s;
   }
   
   /* Track */
@@ -294,7 +303,7 @@ height:50px; transition:ease-out background-color 2s;
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar-thumb:hover {  
     background: #000000;
     border-radius: 10px; 
   }
