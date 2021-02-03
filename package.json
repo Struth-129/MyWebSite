@@ -4,12 +4,14 @@
   "description": "A simple website displaying my skills",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "src/app.js"
   },
   "author": "Saket Srivastava",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.1"
+    "hbs": "^4.1.1",
+    "heroku": "^7.47.11"
   }
 }

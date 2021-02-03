@@ -217,3 +217,63 @@ height:50px; transition:ease-out background-color 2s;
     align-items: center;
     width: 100%;
 }
+
+.head_ind{
+    font-family: 'Sacramento', cursive;
+    font-weight: 900;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 100px;
+    color:rgb(106, 12, 109);
+    transition: all linear;
+    animation: hovi 2s infinite;
+    padding: 0;
+    position: absolute;
+    left:35%;
+}
+@media(max-width:800px){
+    .head_ind{left:25%;}
+}
+@keyframes hovi{
+    0%{
+        font-size: 105px;
+    }50%{
+        font-size: 100px;
+    }100%{
+        font-size: 105px;
+    }
+}
+.pyth,.logo{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top:25%;
+    margin-left: 10%;
+    box-shadow: 1px 1px 10px 1px;    
+}
+.pyth:hover,.logo:hover{
+    cursor: pointer;
+    animation: pythr 1s alternate;
+    box-sizing: 1px 1px 15px 1px;
+    animation-fill-mode: forwards;
+}
+@keyframes pythr{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(-20deg);
+    }
+}
+.middle{
+    position: relative;
+    top:30%;
+    margin-bottom: 40px;
+}
+.logo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.logo:hover{
+    box-shadow: 1px 1px 10px 1px lime;
+}

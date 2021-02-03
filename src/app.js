@@ -3,6 +3,7 @@ const path = require('path');
 const staticPath = path.join(__dirname,"../public");
 const app = express();
 const hbs = require('hbs');
+const port= process.env.PORT || 5000;
 const tempPath = path.join(__dirname,"../templates/views");
 const part_path = path.join(__dirname,"../templates/partials");
 app.set('view engine','hbs');
@@ -26,4 +27,4 @@ app.get("*",(req,res)=>{
     res.render('404nf');
 });
 
-app.listen(3000);
+app.listen(port);
